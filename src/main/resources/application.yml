@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active: develop
+
+#groupping
+---
+spring:
+  profiles:
+    group:
+      develop :
+        - common
+
+---
+netty:
+  server:
+    port: 8080
+    boss-thread-count: 1
+    worker-thread-count: 8
+
